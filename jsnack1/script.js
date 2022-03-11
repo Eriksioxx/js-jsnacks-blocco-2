@@ -11,9 +11,6 @@ for (let i = 0; i < 10; i++) {
 
 console.log('Numeri generati: ' + numeri);
 
-
-
-
 // faccio la somma di tutti gli elementi che sono in posizione dispari
 let sommaDispari = 0;
 
