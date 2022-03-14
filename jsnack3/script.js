@@ -12,9 +12,21 @@ let numberGroup2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Aggiungi elementi casuali all’array che ha meno elementi
 
-// for (let i = 0; numberGroup1.length < numberGroup2.length; i++) {
-//     numberGroup1.push(parseInt(Math.random() * 10) + 1);
-// }
+let minore;
+let maggiore;
+
+
+if (numberGroup1.length < numberGroup2.length) {
+    console.log('1° Array < 2° Array');
+
+    minore = numberGroup1;
+    maggiore = numberGroup2;
+} else if (numberGroup1.length > numberGroup2.length) {
+    console.log('1° Array > 2° Array');
+
+    minore = numberGroup2;
+    maggiore = numberGroup1;
+}
 
 while (numberGroup1.length < numberGroup2.length) {
     numberGroup1.push(parseInt(Math.random() * 10) + 1);
